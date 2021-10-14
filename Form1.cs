@@ -55,7 +55,7 @@ namespace proba
             InitializeComponent();
             pictureBox1.Image = enkep;
             pictureBox2.Image = cskep;
-            timer1.Interval = 0;
+            timer1.Interval = 1;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,9 +76,9 @@ namespace proba
             // label3.Text=ido++.ToString();
             //            Kapcsol(20+ido, 20, pictureBox1, enkep);
             enkep.SetPixel(V(), V(), Color.Black);
-            //pictureBox1.Refresh();
+            pictureBox1.Refresh();
             cskep.SetPixel(rnd.Next(0,100), rnd.Next(0, 100), Color.Black);
-            //pictureBox2.Refresh();
+            pictureBox2.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
